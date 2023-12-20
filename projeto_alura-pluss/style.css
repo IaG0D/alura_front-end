@@ -16,10 +16,18 @@ body{
     margin: 0;
     padding: 0;
 }
+.hover__imagem{
+    transition: 0.4s;
+}
+.hover__imagem:hover{
+    scale: 1.2;
+}
 .principal {
     background-image: url("assets/Background.png");
     background-repeat: no-repeat;
     background-size: contain;
+    align-items: center;
+    text-align: center;
 }
 .container {
     height: 100vh;
@@ -39,13 +47,17 @@ body{
 .container__botao{
     background-color: var(--botao-azul);
     text-decoration: none;
-    padding: 1em;
     border-radius: 0.5rem;
     color: var(--branco-principal);
+    padding: 1em;
     display: block;
     font-size: 16px;
     font-weight: 400;
     margin-bottom: 1em;
+    transition: 0.4s;
+}
+.container__botao:hover{
+    opacity: 50%;
 }
 .botao_secundario{
     background-color: transparent;
@@ -54,5 +66,85 @@ body{
 .container__aviso{
     font-size: 12px;
     font-weight: 400;
+    color: var(--cinza-secundario);
+}
+.secundario{
+    align-items: center;
+    margin: 0 10em;
+}
+.secundario__imagem{
+    width: 80%;
+}
+.secundario__titulo{
+    font-size: 48px;
+}
+.secundario__descricao__titulo{
+    font-size: 16px;
+    color: var(--cinza-secundario);
+    margin: 0 0 0.5em 0;
+}
+.terceario{
+    align-items: center;
+
+}
+.terceario__imagem{
+    width: 70%;
+    margin: 0 10em;
+}
+.terceario__descricao{
+    margin-left: 10em;
+}
+.terceario__descricao__titulo{
+    font-size: 16px;
+    color: var(--cinza-secundario);
+    margin: 0 0 1.3em 0;
+}
+.container__botao__terceario{
+    display: inline-block;
+}
+.dispositivos{
+    text-align: center;
+    font-weight: 700;
+}
+.dispositivos__titulo{
+    font-size: 48px;
+    color: var(--branco-principal);
+}
+.dispositivos__lista{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 5em 0 13em 0;
+    gap: 0 5em;
+}
+.lista__item{
+    font-size: 32;
+    color: var(--branco-principal);
+}
+.rodape{
+    margin: 0 0 4em 0;
+    text-align: center;
+}
+.rodape__lista{
+    margin: 2.5em 0 0 0;
+    display: flex;
+    list-style: none;
+    gap: 0 1.5em;
+    justify-content: center;
+}
+.lista__link{
+    color: var(--branco-principal);
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+    list-style: none;
+    transition: 0.4s;
+}
+.lista__link:hover{
+    opacity: 70%;
+}
+.rodape__texto{
+    margin: 2em 0 0 0;
+    font-size: 14px;
     color: var(--cinza-secundario);
 }
